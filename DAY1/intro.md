@@ -1,6 +1,6 @@
 # Kubernetes Introduction and Features
 
-![Kubernetes Logo](k8s-logo.png) <!-- Replace with actual image path -->
+![Kubernetes Logo](../images/kubernetes-logo.png)
 
 ---
 
@@ -52,10 +52,7 @@ Kubernetes (often abbreviated as K8s) is an open-source container orchestration 
 
 ## Kubernetes Architecture Overview
 
-## Kubernetes Architecture Overview
-
 ![Kubernetes Architecture](../images/kubernetes-cluster-architecture.jpg)
-
 
 ### Control Plane Components:
 - **kube-apiserver**: Frontend for Kubernetes control plane; receives REST commands
@@ -69,5 +66,3 @@ Kubernetes (often abbreviated as K8s) is an open-source container orchestration 
 - **kube-proxy**: Maintains network rules and handles communication to Pods
 - **Pods**: Smallest deployable units in Kubernetes; contain one or more containers
 - **CRI (Container Runtime Interface)**: Interface between kubelet and container runtime (e.g., containerd, Docker)
-
-
