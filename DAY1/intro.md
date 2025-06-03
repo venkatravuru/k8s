@@ -52,7 +52,9 @@ Kubernetes (often abbreviated as K8s) is an open-source container orchestration 
 
 ## Kubernetes Architecture Overview
 
-![Kubernetes Architecture](../images/kubernetes-cluster-architecture.png)
+
+![Kubernetes Architecture](https://kubernetes.io/images/docs/kubernetes-cluster-architecture.svg)
+
 
 ### Control Plane Components:
 - **kube-apiserver**: Frontend for Kubernetes control plane; receives REST commands
