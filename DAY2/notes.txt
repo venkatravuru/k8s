@@ -50,7 +50,20 @@ Prerequisite:
 2 - Workers  (1 GB, 1 Core)     t2.micro
 
 
-Note: Open Required Ports In AWS Security Groups. For now we will open All trafic.
+Note: Open Required Ports In AWS Security Groups. For now we will open required port trafic.
+🔧 Control Plane Node (Master Node)
+Port	Protocol	Purpose
+6443	TCP	Kubernetes API server
+2379-2380	TCP	etcd server client API
+10250	TCP	Kubelet API
+10259	TCP	kube-scheduler
+10257	TCP	kube-controller-manager
+🔧 Worker Node
+Port	Protocol	Purpose
+10250	TCP	Kubelet API
+30000-32767	TCP	NodePort Services (default range)
+10255 (optional)	TCP	Read-only Kubelet API (deprecated, often disabled)
+
 
 ==========COMMON FOR MASTER & SLAVES START ====
 
